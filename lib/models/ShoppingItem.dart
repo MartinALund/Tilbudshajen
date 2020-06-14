@@ -3,7 +3,7 @@ import 'dart:ffi';
 class ShoppingItem{
   String title;
   String imageUrl;
-  Double price;
+  String price;
 
   ShoppingItem({this.title, this.imageUrl, this.price});
 }

@@ -1,3 +1,4 @@
+import 'package:Tilbudshajen/models/ShoppingItem.dart';
 import 'package:Tilbudshajen/widgets/ShoppingRowItemWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -29,15 +30,15 @@ class _MainPageState extends State<MainPage> {
           Row(
             children: <Widget>[
               Expanded(
-                child:ShoppingRowItemWidget(title: "Test1", imageUrl: "https://cdn.imgbin.com/4/0/4/imgbin-shark-drawing-cartoon-sharks-blue-and-white-shark-illustration-TcZ3JgGBqMZyqg940QsPRbY8f.jpg",),
+                child:ShoppingRowItemWidget(shoppingItem: new ShoppingItem(title: "Test6", imageUrl: "https://cdn.imgbin.com/4/0/4/imgbin-shark-drawing-cartoon-sharks-blue-and-white-shark-illustration-TcZ3JgGBqMZyqg940QsPRbY8f.jpg", price: "39.95")),
               ),
               SizedBox(width: 20,),
               Expanded(
-                child: ShoppingRowItemWidget(title: "Test2", imageUrl: "https://img.favpng.com/1/22/6/requiem-shark-cartoon-png-favpng-HJCf6ugGmqF03SPi8LkhsT7dK.jpg",),
+                child: ShoppingRowItemWidget(shoppingItem: new ShoppingItem(title: "Test2", imageUrl: "https://img.favpng.com/1/22/6/requiem-shark-cartoon-png-favpng-HJCf6ugGmqF03SPi8LkhsT7dK.jpg", price: "55"),),
               ),
               SizedBox(width: 20,),
               Expanded(
-                child: ShoppingRowItemWidget(title: "Test3", imageUrl: "https://www.pngitem.com/pimgs/m/292-2923106_transparent-shark-png-transparent-fish-and-shark-cartoon.png",),
+                child: ShoppingRowItemWidget(shoppingItem: new ShoppingItem(title: "Test3", imageUrl: "https://www.pngitem.com/pimgs/m/292-2923106_transparent-shark-png-transparent-fish-and-shark-cartoon.png", price: "75"),),
               )
             ],)
         ]);
