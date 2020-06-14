@@ -1,4 +1,5 @@
 import 'package:Tilbudshajen/models/ShoppingItem.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ShoppingRowItemWidget extends StatelessWidget {
@@ -20,12 +21,12 @@ class ShoppingRowItemWidget extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Text(shoppingItem.title,
+          textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 12,
+            fontSize: 16,
             fontWeight: FontWeight.bold
           ),),
           Text("Pris: " + shoppingItem.price.toString() + " DKK"),
-          SizedBox(height: 8,),
           Image.network(shoppingItem.imageUrl,
           height: 150,
           width: 100,)
