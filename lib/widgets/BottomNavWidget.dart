@@ -39,7 +39,7 @@ class _HomeWidgetState extends State<BottomNavWidget> {
           currentTabIndex = index;
         });
       },
-      backgroundColor: Colors.black87,
+      backgroundColor: Theme.of(context).bottomAppBarColor,
       selectedItemColor: Theme.of(context).accentColor,
       unselectedItemColor: Theme.of(context).primaryColorDark,
     );
