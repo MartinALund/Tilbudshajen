@@ -13,7 +13,7 @@ class _HomeWidgetState extends State<BottomNavWidget> {
 
   var bottomNavItems = [
     new BottomNavItem(
-        widget: MainPage(), title: 'Main', icon: Icon(Icons.mood)),
+        widget: MainPage(), title: 'Forside', icon: Icon(Icons.mood)),
     new BottomNavItem(
         widget: ShoppingListPage(), title: 'Shopping list', icon: Icon(Icons.list)),
   ];
@@ -40,8 +40,8 @@ class _HomeWidgetState extends State<BottomNavWidget> {
         });
       },
       backgroundColor: Colors.black87,
-      selectedItemColor: Theme.of(context).primaryColorDark,
-      unselectedItemColor: Theme.of(context).accentColor,
+      selectedItemColor: Theme.of(context).accentColor,
+      unselectedItemColor: Theme.of(context).primaryColorDark,
     );
     return Scaffold(
       body: tabPages[currentTabIndex],
